@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="style.css">
+  
+   <title>D&D Character Generator</title>
+</head>
+<body>
+  
+  <h1>Character Generator</h1>
+  <h2>Which Books would you like to use?</h2>
+  <form>
+    <input type=checkbox id="PHB" checked value="1" readonly> Player's Handbook<br>
+    <input type=checkbox id="DMG"> Dungeon Master Guide<br>
+    <input type=checkbox id="Ravenloft"> Van Richten's Guide to Ravenloft<br>
+    <input type=checkbox id="AI"> Acquisitions Incorporated<br>
+    <input type=checkbox id="SCAG"> Sword Coast Adventurer's Guild<br>
+    <input type=checkbox id="Volo"> Volo's Guide to Monsters<br>
+    <input type=checkbox id="XGtE"> Xanathar's Guide to Everything<br>
+    <input type=checkbox id="MToF"> Mordekainen's Tome of Foes<br>
+    <input type=checkbox id="Ravnica"> Guildmaster's Guide to Ravnica<br>
+    <input type=checkbox id="Eberron"> Eberron: Rising fom the Last War<br>
+    <input type=checkbox id="Theros"> Mythic Odysseys of Theros<br>
+    <input type=checkbox id="EE"> Elemental Evil<br>
+    <input type=checkbox id="EGtW"> Explorer's Guide to Wildemount<br>
+    <input type=checkbox id="Tortle"> The Tortle Package<br>
+    <input type=checkbox id="TCoE"> Tasha's Cauldon of Everything<br>
+     </form> <br> <br>
+     <button id="rollCharacter">Generate Character!</button>
+<br>
+<h1>Your Character</h1>
+
+<form>
+<h2><button type="button" id="reRollRace">Change my Race</button>   Race:</h2>
+<h4><div id="randomRace">
+</div>
+</h4>
+
+<h2><button type="button" id="reRollClass">Change my Class</button>   Class:</h2>
+<h4><div id="randomClass">
+</div>
+</h4>
+
+<h2><button type="button" id="reRollSubclass">Change my Class</button>   Subclass:</h2>
+<h4><div id="randomSubclass">
+</div></h4>
+</form>
+
+<h3>Stats (Not including race bonuses):</h3>
+
+<div id="hStr">
+  </div>
+
+<div id="hDex">
+  </div>
+
+<div id="hCon">
+  </div>
+
+<div id="hInt">
+  </div>
+
+<div id="hWis">
+     </div>
+
+<div id="hCha">
+  </div>
+
+<br>
+<button type="button" id="reRollStats">These Stats Suck. Reroll them Please</button>
+<script src="characterGenerator.js"></script>
+</body>
+</html>
